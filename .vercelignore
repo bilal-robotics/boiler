@@ -1,0 +1,25 @@
+# Only the deployed dashboard belongs in the Vercel project.
+# Everything below is firmware/tooling/backup material, not part of the site.
+
+# PlatformIO build output and tooling
+.pio/
+.vscode/
+lib/
+include/
+
+# Firmware sources
+src/
+
+# Supabase schema (run manually via the Supabase SQL editor)
+supabase/
+
+# Local-only material
+backup/
+data/
+test/
+code.txt
+README-dashboard.md
+
+# Never publish secrets
+.env*
+!.env.example
